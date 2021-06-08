@@ -10,7 +10,7 @@ emailRouter.post('/sendemail', (req, res) => {
     try {
       const mailOptions = {
         from: req.body.username, // sender address
-        to: process.env.Email, // list of receivers
+        to: process.env.MYEmail, // list of receivers
         subject: req.body.message, // Subject line
         html: `
         <p>You have a new contact request.</p>

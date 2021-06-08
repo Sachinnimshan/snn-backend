@@ -5,7 +5,7 @@ import emailRouter from './Routes/Email.js';
 
 dotenv.config();
 
-const PORT = process.env.SERVER_PORT;
+const PORT = process.env.SERVER_PORT || 5000;
 
 const app = express();
 app.use(cors());
@@ -16,8 +16,6 @@ app.use('/api/email', emailRouter);
 app.use('/', (req,res)=>{
     res.send("Server is Ready");
 });
-
-// verify connection configuration
 
 
 app.listen(PORT, () => console.log(`Server Running On Port ${PORT}`));
