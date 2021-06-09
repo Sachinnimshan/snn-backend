@@ -13,14 +13,15 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+
+
+if(process.env.NODE_ENV === "production"){
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
-
 app.use(express.static(path.join(__dirname, 'build')));
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
-
+}
 app.use('/api/email', emailRouter);
 
 app.use('/', (req,res)=>{
