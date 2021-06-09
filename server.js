@@ -7,7 +7,7 @@ import { fileURLToPath } from 'url';
 
 dotenv.config();
 
-const PORT = process.env.SERVER_PORT || 8080;
+const PORT = process.env.PORT || 5000;
 
 const app = express();
 app.use(cors());
