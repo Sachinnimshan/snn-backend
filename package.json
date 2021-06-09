@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "heroku-postbuild": "cd my_web && npm install && npm run build"
+    "heroku-postbuild": "npm install && npm run build"
   },
   
   "author": "Sachin Nimshan",
