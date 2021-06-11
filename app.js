@@ -13,7 +13,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use('/api/email', emailRouter);
+app.use('/email', emailRouter);
 
 if(process.env.NODE_ENV === "production"){
   const __dirname = path.dirname(fileURLToPath(import.meta.url));
