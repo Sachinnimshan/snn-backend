@@ -1,13 +1,12 @@
 {
   "name": "print_api",
-  "proxy": "http://localhost:3000",
   "type": "module",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "heroku-postbuild": "npm install && npm run build"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
   },
   
   "author": "Sachin Nimshan",
