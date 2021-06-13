@@ -24,5 +24,6 @@
     "type": "git",
     "url": "git remote add origin https://github.com/Sachinnimshan/print_API.git"
   },
-  "description": ""
+  "description": "",
+  "proxy": "http://localhost:5000"
 }
