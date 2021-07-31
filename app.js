@@ -28,4 +28,4 @@ app.use('/', (req,res)=>{
     res.send("Server is Ready");
 });
 
-app.listen(PORT, () => console.log(`Server Running On Port ${PORT}`));
+app.listen(PORT, () => console.log(`Server Running Port ${PORT}`));
