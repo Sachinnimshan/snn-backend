@@ -16,7 +16,7 @@ app.use(express.urlencoded({extended: true}));
 
 app.use('/email', emailRouter);
 
-if(process.env.NODE_ENV === "PROD"){
+if(process.env.ENV === "PROD"){
   const __dirname = path.dirname(fileURLToPath(import.meta.url));
   app.use(express.static(path.join(__dirname, 'build')));
   app.get('*', (req, res) => {
