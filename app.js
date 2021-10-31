@@ -30,7 +30,7 @@ app.use('/email', emailRouter);
 app.use('/api/users', userRouter);
 app.use('/api/projects', projectRouter);
 
-if(process.env.ENV === "DEV"){
+if(process.env.ENV === "PROD"){
   const __dirname = path.dirname(fileURLToPath(import.meta.url));
   app.use(express.static(path.join(__dirname, 'build')));
   app.get('*', (req, res) => {
