@@ -6,7 +6,7 @@ import { generateToken } from '../util.js';
 export const feedUsers=async(req,res)=>{
     try{
         await MyUser.deleteMany({});
-        const users = await MyUser.insertMany(data);
+        const users = await MyUser.insertMany(data.users);
         res.status(200).send({users});
     }catch(error){
         res.status(401).send({message: error});

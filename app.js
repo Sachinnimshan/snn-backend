@@ -3,6 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import emailRouter from './Routes/Email.js';
 import userRouter from './Routes/userRoutes.js';
+import projectRouter from './Routes/projectRoutes.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import http from 'http';
@@ -27,8 +28,9 @@ mongoose.connect(CONNECTION,{
 
 app.use('/email', emailRouter);
 app.use('/api/users', userRouter);
+app.use('/api/projects', projectRouter);
 
-if(process.env.ENV === "PROD"){
+if(process.env.ENV === "DEV"){
   const __dirname = path.dirname(fileURLToPath(import.meta.url));
   app.use(express.static(path.join(__dirname, 'build')));
   app.get('*', (req, res) => {
