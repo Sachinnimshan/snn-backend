@@ -20,3 +20,12 @@ export const getAllProjects=async(req,res)=>{
         res.status(401).send(error);
     }
 }
+
+export const getProjectInfo=async(req,res)=>{
+    try{
+        const project = await Projects.findById(req.params.id);
+        res.status(200).send(project);
+    }catch(error){
+        res.status(401).send(error);
+    }
+}
