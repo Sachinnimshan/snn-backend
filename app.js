@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import emailRouter from './Routes/Email.js';
 import userRouter from './Routes/userRoutes.js';
 import projectRouter from './Routes/projectRoutes.js';
+import reviewRouter from './Routes/reviewRouter.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import http from 'http';
@@ -29,6 +30,7 @@ mongoose.connect(CONNECTION,{
 app.use('/email', emailRouter);
 app.use('/api/users', userRouter);
 app.use('/api/projects', projectRouter);
+app.use('/api/reviews', reviewRouter);
 
 if(process.env.ENV === "PROD"){
   const __dirname = path.dirname(fileURLToPath(import.meta.url));

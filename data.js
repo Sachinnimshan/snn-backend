@@ -15,7 +15,10 @@ const data = {
             description: "MERN Stack | E-commerce website",
             demo: "http://snmart.herokuapp.com",
             youtube: "https://www.youtube.com/watch?v=aRjjdu2k-xU&list=PLWzNP2iyv9fCSm_ZRnIvOP0tx3eK6upy9",
-            github: "https://github.com/Sachinnimshan/snmart-web"
+            github: "https://github.com/Sachinnimshan/snmart-web",
+            languages: ['React','Node','Express','Mongo DB','CSS','Material UI','Bootstrap'],
+            technology: "MERN Stack",
+            gallery: ['/projects/p1.jpg', '/projects/p1.jpg', '/projects/p1.jpg','/projects/p1.jpg']
         },
         {
             title: "Cryptocurrency web",
@@ -23,7 +26,10 @@ const data = {
             description: "MERN Stack | Cryptocurrency website",
             demo: "http://cryptsn.herokuapp.com",
             youtube: "https://www.youtube.com/watch?v=aRjjdu2k-xU&list=PLWzNP2iyv9fCSm_ZRnIvOP0tx3eK6upy9",
-            github: "https://github.com/Sachinnimshan/crypt-web"
+            github: "https://github.com/Sachinnimshan/crypt-web",
+            languages: ['React','Node','Express','Mongo DB','CSS','Material UI','Bootstrap'],
+            technology: "MERN Stack",
+            gallery: ['/projects/crypto.jpg', '/projects/crypto.jpg', '/projects/crypto.jpg']
         },
         {
             title: "TVSN Movie Web",
@@ -31,7 +37,36 @@ const data = {
             description: "MERN Stack | Movie & Tv Series website",
             demo: "http://tvsn.herokuapp.com",
             youtube: "https://www.youtube.com/watch?v=SJC6whT0wQM",
-            github: "https://github.com/Sachinnimshan/tvsn"
+            github: "https://github.com/Sachinnimshan/tvsn",
+            languages: ['React','Node','Express','Mongo DB','CSS','Material UI','Bootstrap'],
+            technology: "MERN Stack",
+            gallery: ['/projects/tvsn.jpg', '/projects/tvsn.jpg', '/projects/tvsn.jpg']
+        }
+    ],
+    comments: [
+        {
+            name: "Sachin Nimshan",
+            email: "sachinnimshan@gmail.com",
+            comment: "It's an Amazing work",
+            project: "6180f74613d717488e90656f"
+        },
+        {
+            name: "John Hicock",
+            email: "johnhicock@gmail.com",
+            comment: "Wooow, its amazing work",
+            project: "6180f74613d717488e90656f"
+        },
+        {
+            name: "John Doe",
+            email: "John Doe@gmail.com",
+            comment: "Elegant work, woooow",
+            project: "6180f74613d717488e906570"
+        },
+        {
+            name: "Kumar Sangakkara",
+            email: "sanga@gmail.com",
+            comment: "Woow, Keep it up",
+            project: "6180f74713d717488e906571"
         }
     ]
 }
