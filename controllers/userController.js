@@ -2,6 +2,7 @@ import MyUser from '../model/user.js';
 import data from '../data.js';
 import bcrypt from 'bcryptjs';
 import { generateToken } from '../util.js';
+import errorFunction from '../validations/errorFunction.js';
 
 export const feedUsers=async(req,res)=>{
     try{
@@ -42,10 +43,11 @@ export const userSignIn=async(req,res)=>{
     }
 }
 
-export const userRegister=async(req,res)=>{
+export const userRegister=async(req,res,next)=>{
         const exitinguser = await MyUser.findOne({email: req.body.email});
         if(exitinguser){
-            res.status(401).send({message: "This Email is Already in use"});
+            res.status(401);
+            return res.json(errorFunction(true, "This Email is Already Exists"));
         }else{
         try{
             const user = new MyUser({
@@ -61,7 +63,8 @@ export const userRegister=async(req,res)=>{
             token: generateToken(newuser)
         });
     }catch(error){
-        res.status(401).send(error);
+        res.status(401);
+        return res.json(errorFunction(true, "Something went wrong"));
     }
     }
 }

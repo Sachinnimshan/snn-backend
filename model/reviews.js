@@ -4,8 +4,8 @@ import mongoose from 'mongoose';
 const reviews = new mongoose.Schema({
     name: {type: String, required: true},
     email: {type: String, required: true},
-    comment: {type: String},
-    project: {type: String}
+    comment: {type: String, required: true},
+    projectID: {type: String, required: true}
 },{
     timestamps: true
 });

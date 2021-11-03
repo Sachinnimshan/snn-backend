@@ -48,25 +48,25 @@ const data = {
             name: "Sachin Nimshan",
             email: "sachinnimshan@gmail.com",
             comment: "It's an Amazing work",
-            project: "6180f74613d717488e90656f"
+            projectID: "6180f74613d717488e90656f"
         },
         {
             name: "John Hicock",
             email: "johnhicock@gmail.com",
             comment: "Wooow, its amazing work",
-            project: "6180f74613d717488e90656f"
+            projectID: "6180f74613d717488e90656f"
         },
         {
             name: "John Doe",
             email: "John Doe@gmail.com",
             comment: "Elegant work, woooow",
-            project: "6180f74613d717488e906570"
+            projectID: "6180f74613d717488e906570"
         },
         {
             name: "Kumar Sangakkara",
             email: "sanga@gmail.com",
             comment: "Woow, Keep it up",
-            project: "6180f74713d717488e906571"
+            projectID: "6180f74713d717488e906571"
         }
     ]
 }
