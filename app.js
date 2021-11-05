@@ -28,7 +28,7 @@ mongoose.connect(CONNECTION,{
 .catch((error)=> console.log(error));
 
 app.use('/email', emailRouter);
-app.use('/api/users', userRouter);
+app.use('/api/user', userRouter);
 app.use('/api/projects', projectRouter);
 app.use('/api/reviews', reviewRouter);
 

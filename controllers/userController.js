@@ -43,7 +43,7 @@ export const userSignIn=async(req,res)=>{
     }
 }
 
-export const userRegister=async(req,res,next)=>{
+export const userRegister=async(req,res)=>{
         const exitinguser = await MyUser.findOne({email: req.body.email});
         if(exitinguser){
             res.status(401);
@@ -66,6 +66,35 @@ export const userRegister=async(req,res,next)=>{
         res.status(401);
         return res.json(errorFunction(true, "Something went wrong"));
     }
+    }
+}
+
+export const userProfile=async(req,res)=>{
+    const profile = await MyUser.findById(req.params.id);
+    if(profile){
+        res.status(200);
+        return res.json(errorFunction(false, "User Profile", profile));
+    }else{
+        res.status(400);
+        res.json(errorFunction(true, "Sorry... Something went wrong"));
+    }
+}
+
+export const updateProfile=async(req,res, next)=>{
+    const user = await MyUser.findById(req.user._id);
+    if(user){
+        user.name = req.body.name || user.name;
+        user.email = req.body.email || user.email;
+        if(req.body.password){
+            user.password = bcrypt.hashSync(req.body.password, 8);
+        }
+        const updateduser = await user.save();
+            res.send({
+                _id: updateduser._id,
+                name: updateduser.name,
+                email: updateduser.email,
+                token: generateToken(updateduser)
+            });
     }
 }
 
