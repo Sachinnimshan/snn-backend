@@ -5,6 +5,7 @@ import emailRouter from './Routes/Email.js';
 import userRouter from './Routes/userRoutes.js';
 import projectRouter from './Routes/projectRoutes.js';
 import reviewRouter from './Routes/reviewRouter.js';
+import contactRouter from './Routes/contactRouter.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import http from 'http';
@@ -31,6 +32,7 @@ app.use('/email', emailRouter);
 app.use('/api/user', userRouter);
 app.use('/api/projects', projectRouter);
 app.use('/api/reviews', reviewRouter);
+app.use('/api/contact', contactRouter);
 
 if(process.env.ENV === "PROD"){
   const __dirname = path.dirname(fileURLToPath(import.meta.url));
