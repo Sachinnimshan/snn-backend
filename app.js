@@ -20,7 +20,7 @@ app.use(express.urlencoded({extended: true}));
 const server = http.createServer(app);
 
 const PORT = process.env.PORT || 5000;
-const CONNECTION = process.env.DB_URL;
+const CONNECTION = process.env.DB_CONNECTION;
 
 mongoose.connect(CONNECTION,{
   useNewUrlParser: true
