@@ -34,13 +34,13 @@ app.use('/api/projects', projectRouter);
 app.use('/api/reviews', reviewRouter);
 app.use('/api/contact', contactRouter);
 
-if(process.env.ENV === "PROD"){
-  const __dirname = path.dirname(fileURLToPath(import.meta.url));
-  app.use(express.static(path.join(__dirname, 'build')));
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
-  });
-}
+// if(process.env.ENV === "PROD"){
+//   const __dirname = path.dirname(fileURLToPath(import.meta.url));
+//   app.use(express.static(path.join(__dirname, 'build')));
+//   app.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'build', 'index.html'));
+//   });
+// }
 
 app.use('/', (req,res)=>{
     res.send("Server is Ready");
