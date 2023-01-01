@@ -6,6 +6,7 @@ import userRouter from './Routes/userRoutes.js';
 import projectRouter from './Routes/projectRoutes.js';
 import reviewRouter from './Routes/reviewRouter.js';
 import contactRouter from './Routes/contactRouter.js';
+import resumeRouter from './Routes/resumeRouter.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import http from 'http';
@@ -33,6 +34,7 @@ app.use('/api/user', userRouter);
 app.use('/api/projects', projectRouter);
 app.use('/api/reviews', reviewRouter);
 app.use('/api/contact', contactRouter);
+app.use('/api/resume', resumeRouter);
 
 // if(process.env.ENV === "PROD"){
 //   const __dirname = path.dirname(fileURLToPath(import.meta.url));

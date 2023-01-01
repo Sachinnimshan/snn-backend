@@ -13,7 +13,7 @@ const data = {
             title: "Amazon Clone",
             image: "/projects/p1.jpg",
             description: "MERN Stack | E-commerce website",
-            demo: "http://snmart.herokuapp.com",
+            demo: "http://snmart.netlify.app",
             youtube: "https://www.youtube.com/watch?v=aRjjdu2k-xU&list=PLWzNP2iyv9fCSm_ZRnIvOP0tx3eK6upy9",
             github: "https://github.com/Sachinnimshan/snmart-web",
             languages: ['React','Node','Express','Mongo DB','CSS','Material UI','Bootstrap'],
@@ -21,26 +21,26 @@ const data = {
             gallery: ['/projects/p1.jpg', '/projects/p1.jpg', '/projects/p1.jpg','/projects/p1.jpg']
         },
         {
-            title: "Cryptocurrency web",
-            image: "/projects/crypto.jpg",
-            description: "MERN Stack | Cryptocurrency website",
-            demo: "http://cryptsn.herokuapp.com",
-            youtube: "https://www.youtube.com/watch?v=aRjjdu2k-xU&list=PLWzNP2iyv9fCSm_ZRnIvOP0tx3eK6upy9",
-            github: "https://github.com/Sachinnimshan/crypt-web",
-            languages: ['React','Node','Express','Mongo DB','CSS','Material UI','Bootstrap'],
-            technology: "MERN Stack",
-            gallery: ['/projects/crypto.jpg', '/projects/crypto.jpg', '/projects/crypto.jpg']
-        },
-        {
             title: "TVSN Movie Web",
             image: "/projects/tvsn.jpg",
             description: "MERN Stack | Movie & Tv Series website",
-            demo: "http://tvsn.herokuapp.com",
+            demo: "http://tvsn.netlify.app",
             youtube: "https://www.youtube.com/watch?v=SJC6whT0wQM",
             github: "https://github.com/Sachinnimshan/tvsn",
             languages: ['React','Node','Express','Mongo DB','CSS','Material UI','Bootstrap'],
             technology: "MERN Stack",
             gallery: ['/projects/tvsn.jpg', '/projects/tvsn.jpg', '/projects/tvsn.jpg']
+        },
+        {
+            title: "Memosn Social Media Web",
+            image: "/projects/memo.jpg",
+            description: "MERN Stack | Social Media Website",
+            demo: "http://memosn.netlify.app",
+            youtube: "https://www.youtube.com/watch?v=SJC6whT0wQM",
+            github: "https://github.com/Sachinnimshan/memo_web",
+            languages: ['React','Node','Express','Mongo DB','CSS','Material UI','Bootstrap'],
+            technology: "MERN Stack",
+            gallery: ['/projects/memosn.jpg']
         }
     ],
     comments: [
@@ -67,6 +67,11 @@ const data = {
             email: "sanga@gmail.com",
             comment: "Woow, Keep it up",
             projectID: "6180f74713d717488e906571"
+        }
+    ],
+    resume: [
+        {
+            resume: "/projects/K.G.A Sachin Nimshan - CV.pdf"
         }
     ]
 }
