@@ -13,8 +13,10 @@ export const uploadResume =async(req,res)=>{
 
 export const downloadResume = async(req,res)=>{
     try{
-        const resume = await Resume.find({});
-        res.status(200).send(resume);
+        const file = "./K.G.A Sachin Nimshan - CV.pdf";
+        if(file){
+            res.download(file);
+        }
     }catch(error){
         res.status(401).send(error);
     }
