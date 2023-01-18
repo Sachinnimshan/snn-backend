@@ -1,8 +1,7 @@
-import express from 'express';
-import { downloadResume, uploadResume } from '../controllers/fileController.js';
+import express from "express";
+import { downloadResume, uploadResume } from "../controllers/fileController.js";
 
-const router   = express.Router();
-
+const router = express.Router();
 
 router.get("/seed", uploadResume);
 router.get("/", downloadResume);

@@ -119,20 +119,20 @@ const data = {
         "Frontend developments with react JS adhering to global best practices.",
         "Assist in new feature developments mainly in 2 applications",
         "Maintain and develop reusable components in project for future usage",
-        "General bug fixing in front end"
+        "General bug fixing in front end",
       ],
     },
     {
-        jobDuration: "2022 February - 2022 April",
-        companyName: "Arimac - Sri Lanka",
-        jobTitle: "Software Engineer 1",
-        keyroles: [
-          "Rapid feature development and working in an agile environment.",
-          "Exposure into CI/CD practices",
-          "Frontend developments with react JS adhering to global best practices.",
-          "General bug fixing in front end"
-        ],
-      },
+      jobDuration: "2022 February - 2022 April",
+      companyName: "Arimac - Sri Lanka",
+      jobTitle: "Software Engineer 1",
+      keyroles: [
+        "Rapid feature development and working in an agile environment.",
+        "Exposure into CI/CD practices",
+        "Frontend developments with react JS adhering to global best practices.",
+        "General bug fixing in front end",
+      ],
+    },
   ],
 };
 
