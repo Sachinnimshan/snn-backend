@@ -8,6 +8,7 @@ import reviewRouter from "./Routes/reviewRouter.js";
 import contactRouter from "./Routes/contactRouter.js";
 import resumeRouter from "./Routes/resumeRouter.js";
 import experienceRouter from "./Routes/expRouter.js";
+import educationRouter from "./Routes/eduRouter.js";
 import path from "path";
 import { fileURLToPath } from "url";
 import http from "http";
@@ -38,7 +39,7 @@ app.use("/api/reviews", reviewRouter);
 app.use("/api/contact", contactRouter);
 app.use("/api/resume", resumeRouter);
 app.use("/api/experience", experienceRouter);
-
+app.use("/api/education", educationRouter);
 // if(process.env.ENV === "PROD"){
 //   const __dirname = path.dirname(fileURLToPath(import.meta.url));
 //   app.use(express.static(path.join(__dirname, 'build')));

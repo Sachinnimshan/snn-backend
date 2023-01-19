@@ -134,6 +134,22 @@ const data = {
       ],
     },
   ],
+  educationData: [
+    {
+      title: "Bachelor of Science with Honours in Software Engineering",
+      years: "2017 - 2018",
+      university: "Cardiff Metropolitan University",
+      grade: "2nd Class",
+      syllabus: [""],
+    },
+    {
+      title: "Higher National Diploma in Computing & Software Engineering",
+      years: "2016 - 2017",
+      university: "ICBT Campus and Cardiff Metropolitan University",
+      grade: "1st Class",
+      syllabus: [""],
+    },
+  ],
 };
 
 export default data;
