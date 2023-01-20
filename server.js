@@ -4,13 +4,10 @@ import dotenv from "dotenv";
 import emailRouter from "./Routes/Email.js";
 import userRouter from "./Routes/userRoutes.js";
 import projectRouter from "./Routes/projectRoutes.js";
-import reviewRouter from "./Routes/reviewRouter.js";
 import contactRouter from "./Routes/contactRouter.js";
 import resumeRouter from "./Routes/resumeRouter.js";
 import experienceRouter from "./Routes/expRouter.js";
 import educationRouter from "./Routes/eduRouter.js";
-import path from "path";
-import { fileURLToPath } from "url";
 import http from "http";
 import mongoose from "mongoose";
 
@@ -35,7 +32,6 @@ mongoose
 app.use("/email", emailRouter);
 app.use("/api/user", userRouter);
 app.use("/api/projects", projectRouter);
-app.use("/api/reviews", reviewRouter);
 app.use("/api/contact", contactRouter);
 app.use("/api/resume", resumeRouter);
 app.use("/api/experience", experienceRouter);
