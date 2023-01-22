@@ -111,6 +111,10 @@ const data = {
   experienceData: [
     {
       jobDuration: "2022 April - 2022 December",
+      startYear: 2022,
+      endYear: 2022,
+      startMonth: 4,
+      endMonth: 12,
       companyName: "Spades App - United Arab Emirates",
       jobTitle: "Frontend Engineer",
       keyroles: [
@@ -124,6 +128,10 @@ const data = {
     },
     {
       jobDuration: "2022 February - 2022 April",
+      startYear: 2022,
+      endYear: 2022,
+      startMonth: 2,
+      endMonth: 4,
       companyName: "Arimac - Sri Lanka",
       jobTitle: "Software Engineer 1",
       keyroles: [
@@ -131,6 +139,20 @@ const data = {
         "Exposure into CI/CD practices",
         "Frontend developments with react JS adhering to global best practices.",
         "General bug fixing in front end",
+      ],
+    },
+    {
+      jobDuration: "2020 July - 2021 November",
+      startYear: 2020,
+      endYear: 2021,
+      startMonth: 7,
+      endMonth: 11,
+      companyName: "Codedagger - Australia",
+      jobTitle: "Software Developer",
+      keyroles: [
+        "Exposure into backend implementations (Express JS)",
+        "General bug fixing in front end and backend",
+        "Frontend developments with react JS adhering to global best practices",
       ],
     },
   ],
