@@ -2,7 +2,8 @@ import mongoose from "mongoose";
 
 const EducationSchema = new mongoose.Schema({
   title: { type: String, unique: true, required: true },
-  years: { type: String, required: true },
+  start: { type: Date, required: true },
+  ends: { type: Date, default: null },
   university: { type: String, required: true },
   grade: { type: String, required: true },
   syllabus: { type: [String] },
