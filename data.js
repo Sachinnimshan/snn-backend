@@ -111,7 +111,6 @@ const data = {
   experienceData: [
     {
       start: new Date(2022, 4),
-      ends: new Date(2022, 12),
       companyName: "Spades App - United Arab Emirates",
       jobTitle: "Frontend Engineer",
       keyroles: [
