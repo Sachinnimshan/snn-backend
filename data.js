@@ -110,11 +110,8 @@ const data = {
   ],
   experienceData: [
     {
-      jobDuration: "2022 April - 2022 December",
-      startYear: 2022,
-      endYear: 2022,
-      startMonth: 4,
-      endMonth: 12,
+      start: new Date(2022, 4),
+      ends: new Date(2022, 12),
       companyName: "Spades App - United Arab Emirates",
       jobTitle: "Frontend Engineer",
       keyroles: [
@@ -127,11 +124,8 @@ const data = {
       ],
     },
     {
-      jobDuration: "2022 February - 2022 April",
-      startYear: 2022,
-      endYear: 2022,
-      startMonth: 2,
-      endMonth: 4,
+      start: new Date(2022, 2),
+      ends: new Date(2022, 4),
       companyName: "Arimac - Sri Lanka",
       jobTitle: "Software Engineer 1",
       keyroles: [
@@ -142,11 +136,8 @@ const data = {
       ],
     },
     {
-      jobDuration: "2020 July - 2021 November",
-      startYear: 2020,
-      endYear: 2021,
-      startMonth: 7,
-      endMonth: 11,
+      start: new Date(2020, 7),
+      ends: new Date(2021, 11),
       companyName: "Codedagger - Australia",
       jobTitle: "Software Developer",
       keyroles: [
