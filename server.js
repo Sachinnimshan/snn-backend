@@ -1,7 +1,6 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import emailRouter from "./Routes/Email.js";
 import userRouter from "./Routes/userRoutes.js";
 import projectRouter from "./Routes/projectRoutes.js";
 import contactRouter from "./Routes/contactRouter.js";
