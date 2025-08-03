@@ -5,13 +5,14 @@ import http from "http";
 import { connectDB } from "./db.js";
 
 // Import your routers here
-import userRouter from "./routes/userRoutes.js";
+import userRouter from "./routes/userRouter.js";
 import projectRouter from "./routes/projectRoutes.js";
 import contactRouter from "./routes/contactRouter.js";
 import resumeRouter from "./routes/resumeRouter.js";
 import experienceRouter from "./routes/expRouter.js";
 import educationRouter from "./routes/eduRouter.js";
 import certificationRouter from "./routes/certificationRouter.js";
+import industryProjectRouter from "./routes/industryProjectRouter.js";
 
 dotenv.config();
 
@@ -31,6 +32,7 @@ app.use("/api/resume", resumeRouter);
 app.use("/api/experience", experienceRouter);
 app.use("/api/education", educationRouter);
 app.use("/api/certifications", certificationRouter);
+app.use("/api/industryprojects", industryProjectRouter);
 
 // Base route
 app.get("/", (req, res) => {
