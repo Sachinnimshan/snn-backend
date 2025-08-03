@@ -26,13 +26,6 @@
     "mongoose": "^6.0.12",
     "nodemailer": "^6.6.0"
   },
-  "devDependencies": {
-    "@types/express": "^5.0.3",
-    "@types/node": "^24.1.0",
-    "nodemon": "^2.0.22",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.2"
-  },
   "repository": {
     "type": "git",
     "url": "git remote add origin https://github.com/Sachinnimshan/print_API.git"

@@ -3,8 +3,6 @@ import cors from "cors";
 import dotenv from "dotenv";
 import http from "http";
 import { connectDB } from "./db.js";
-
-// Import your routers here
 import userRouter from "./routes/userRouter.js";
 import projectRouter from "./routes/projectRoutes.js";
 import contactRouter from "./routes/contactRouter.js";
