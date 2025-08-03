@@ -11,6 +11,7 @@ import experienceRouter from "./routes/expRouter.js";
 import educationRouter from "./routes/eduRouter.js";
 import certificationRouter from "./routes/certificationRouter.js";
 import industryProjectRouter from "./routes/industryProjectRouter.js";
+import skillRouter from "./routes/skillRouter.js";
 
 dotenv.config();
 
@@ -31,7 +32,7 @@ app.use("/api/experience", experienceRouter);
 app.use("/api/education", educationRouter);
 app.use("/api/certifications", certificationRouter);
 app.use("/api/industryprojects", industryProjectRouter);
-
+app.use("/api/skills", skillRouter);
 // Base route
 app.get("/", (req, res) => {
   res.send("Server is Ready");
