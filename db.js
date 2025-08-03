@@ -1,27 +1,21 @@
-import { MongoClient } from "mongodb";
-import dotenv from "dotenv";
+import mongoose from "mongoose";
+import dotenv from 'dotenv';
 
 dotenv.config();
-let dbConn;
-const dbURL =
-  "mongodb+srv://sachin:8382sachin@cluster0.lspty.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
-export const connectDB = (callback) => {
-  MongoClient.connect(dbURL)
-    .then((client) => {
-      dbConn = client.db();
-      console.log("Database Connected");
-      return callback();
-    })
-    .catch((err) => {
-      console.log(err);
-      return callback(err);
+const CONNECTION = process.env.MONGO_URI;
+
+export const connectDB = async () => {
+  if (!CONNECTION) throw new Error("DB_CONNECTION not defined in environment");
+
+  try {
+    await mongoose.connect(CONNECTION, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
     });
-};
-
-export const dbConnection = () => {
-  return dbConn;
-};
-export const closeConnection = () => {
-  dbConn.close();
+    console.log("Database connected");
+  } catch (err) {
+    console.error("Failed to connect to DB", err);
+    throw err;
+  }
 };
