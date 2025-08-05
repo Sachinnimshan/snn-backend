@@ -12,6 +12,7 @@ import educationRouter from "./routes/eduRouter.js";
 import certificationRouter from "./routes/certificationRouter.js";
 import industryProjectRouter from "./routes/industryProjectRouter.js";
 import skillRouter from "./routes/skillRouter.js";
+import sitemapMiddleware from "./middlewares/sitemap.js";
 
 dotenv.config();
 
@@ -33,6 +34,7 @@ app.use("/api/education", educationRouter);
 app.use("/api/certifications", certificationRouter);
 app.use("/api/industryprojects", industryProjectRouter);
 app.use("/api/skills", skillRouter);
+app.get("/sitemap.xml", sitemapMiddleware);
 // Base route
 app.get("/", (req, res) => {
   res.send("Server is Ready");
